@@ -1,0 +1,30 @@
+{
+  "name": "unscape-html",
+  "version": "0.1.0",
+  "description": "Unescapes HTML",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [
+    "unscape",
+    "html"
+  ],
+  "author": "Nicolas Escalante <nlante@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "mocha": "^5.1.1"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nescalante/unscape-html.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nescalante/unscape-html/issues"
+  },
+  "homepage": "https://github.com/nescalante/unscape-html#readme"
+}
