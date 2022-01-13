@@ -32,6 +32,6 @@ describe('unscape-html', () => {
   });
 
   it('does not remove text', () => {
-    assert.equal(unescape('hi &amp;hi'), 'hi hi');
+    assert.equal(unescape('hi &amp;hi'), 'hi &hi');
   });
 });

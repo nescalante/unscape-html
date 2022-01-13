@@ -15,7 +15,7 @@ module.exports = function (html) {
     .replace(/&lt;/g, '<')
     .replace(/&gt;/g, '>')
     .replace(/&amp;/g, '&')
-    .replace(/&(#(?:\d+)|(?:#x[0-9A-Fa-f]+)|(?:\w+));?/gi, function (_, n) {
+    .replace(/&(#(?:\d+)|(?:#x[0-9A-Fa-f]+)|(?:\w+));?/gi, function (a, n) {
       n = n.toLowerCase();
 
       if (n === 'colon') {
@@ -28,6 +28,6 @@ module.exports = function (html) {
           : String.fromCharCode(+n.substring(1));
       }
 
-      return n;
+      return a;
     });
 };
