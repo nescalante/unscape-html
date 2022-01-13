@@ -15,7 +15,7 @@ npm install unscape-html
 ```js
 const unescape = require('unscape-html');
 
-unscape('javascript&#58;alert(1&#41;') // javascript:alert(1)
+unscape('javascript&#58;alert(1&#41;'); // javascript:alert(1)
 ```
 
 # License

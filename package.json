@@ -1,6 +1,6 @@
 {
   "name": "unscape-html",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Unescapes HTML",
   "main": "index.js",
   "scripts": {
@@ -13,7 +13,7 @@
   "author": "Nicolas Escalante <nlante@gmail.com>",
   "license": "MIT",
   "devDependencies": {
-    "mocha": "^5.1.1"
+    "mocha": "^9.1.3"
   },
   "directories": {
     "test": "test"

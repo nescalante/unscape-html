@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 /**
  * unescape special characters in the given string of html.
@@ -10,12 +10,12 @@
 module.exports = function (html) {
   return String(html)
     .replace(/&quot;/g, '"')
-    .replace(/&#39;/g, '\'')
+    .replace(/&#39;/g, "'")
     .replace(/&#x3A;/g, ':')
     .replace(/&lt;/g, '<')
     .replace(/&gt;/g, '>')
     .replace(/&amp;/g, '&')
-    .replace(/&(#(?:\d+)|(?:#x[0-9A-Fa-f]+)|(?:\w+));?/ig, function(_, n) {
+    .replace(/&(#(?:\d+)|(?:#x[0-9A-Fa-f]+)|(?:\w+));?/gi, function (_, n) {
       n = n.toLowerCase();
 
       if (n === 'colon') {
@@ -28,6 +28,6 @@ module.exports = function (html) {
           : String.fromCharCode(+n.substring(1));
       }
 
-      return '';
+      return n;
     });
-}
+};
